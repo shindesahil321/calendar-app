@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { EventProvider } from './context/EventContext';
+import CalendarPage from './pages/CalendarPage';
+import EventDetailsPage from './pages/EventDetailsPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { ThemeProvider } from './context/ThemeContext';
+import Layout from './components/Layout';
+ 
+const App = () => (
+  <EventProvider>
+    <ThemeProvider>
+      <Router>
+        <Layout>
+          <Header />
+          
+            <Routes>
+              <Route path="/" element={<CalendarPage />} />
+              <Route path="/event/:id" element={<EventDetailsPage />} />
+              {/* Add more routes as needed */}
+            </Routes>
+          
+          <Footer />
+        </Layout>
+      </Router>
+    </ThemeProvider>
+  </EventProvider>
+);
 
 export default App;

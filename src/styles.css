@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* styles.css or calendar.css */
+.calendar-container {
+  max-height: 500px; /* Adjust this value as needed */
+  overflow-y: auto; /* Adds a vertical scrollbar if content exceeds max-height */
+  overflow-x: auto; /* Adds a horizontal scrollbar if needed */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add some padding */
+}
+/* styles.css */
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Responsive grid layout */
+header, nav, main, footer {
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FilterEvents component styles */
+.filter-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #000000; /* Set text color to black */
+}
+
+.event-list-container {
+  max-height: 300px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Adds a vertical scrollbar if content exceeds max-height */
+  margin-top: 10px;
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add some padding */
+  background-color: #f0f0f0; /* Light gray background color */
+  text-align: left; /* Align text to the left */
+  color: #000000; /* Set text color to black */
+}
+
+.event-item {
+  margin-bottom: 10px; /* Adjust margin for space between events */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .filter-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .event-list-container {
+    max-height: 250px; /* Adjust max-height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-container {
+    width: 100%; /* Full width for mobile */
+    padding: 5px; /* Less padding for mobile */
+  }
+
+  .event-list-container {
+    max-height: 200px; /* Adjust max-height for smaller screens */
+    padding: 5px; /* Less padding for mobile */
+  }
+
+  .event-item {
+    margin-bottom: 5px; /* Less margin for mobile */
+  }
+}
+

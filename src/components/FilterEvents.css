@@ -1,0 +1,136 @@
+.filter-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    color: #000000; /* Set text color to black */
+  }
+  
+  .category-select {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .event-list-container {
+    max-height: 400px; /* Adjust max-height as needed */
+    overflow-y: auto; /* Adds a vertical scrollbar if content exceeds max-height */
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 15px;
+    background-color: #f0f0f0; /* Light gray background color */
+    text-align: left; /* Align text to the left */
+    color: #000000; /* Set text color to black */
+    border-radius: 8px;
+  }
+  
+  .event-item {
+    margin-bottom: 15px; /* Space between events */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .edit-form-container h3 {
+    margin-top: 0;
+  }
+  
+  .edit-form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .edit-form-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-container {
+      padding: 15px;
+    }
+  
+    .event-list-container {
+      padding: 10px;
+    }
+  
+    .edit-form-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-container {
+      padding: 10px;
+    }
+  
+    .event-list-container {
+      padding: 8px;
+    }
+  
+    .edit-form-container {
+      padding: 10px;
+    }
+  }
+  

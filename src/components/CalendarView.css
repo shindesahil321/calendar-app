@@ -1,0 +1,107 @@
+body {
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    transition: all 0.5s;
+  }
+  
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .calendar-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calendar-container {
+      padding: 10px;
+    }
+  }
+  
+  .event-list-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: var(--event-list-bg-color);
+    text-align: left;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .event-list-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-list-container {
+      padding: 10px;
+      max-height: 200px;
+    }
+  }
+  
+  .event-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .event-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .event-item {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-item {
+      margin-bottom: 5px;
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    .button-container {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
